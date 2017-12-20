@@ -1,0 +1,28 @@
+
+.entretenimento{
+	@extend .container;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	.container-entretenimento{
+		color: $lapa;
+		.texto-entretenimento{
+			text-align: justify;
+		}
+		.titulo-entretenimento{
+		font-size: 1.1rem
+		}
+		.lista-entretenimento{
+			text-align: justify;
+			padding-left: 5%;
+			line-height: 1.7rem;
+			@media(min-width: map-get($grid-breakpoints,md)){
+				padding-left: 3%;
+			}
+			@media(min-width: map-get($grid-breakpoints,lg)){
+				padding-left: 2%;
+			}
+		}
+	}
+}		
+
+	

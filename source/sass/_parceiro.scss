@@ -1,0 +1,58 @@
+.img-parceiro{
+	@extend .container;	
+	.img-1{
+		margin-top: 1rem;
+		width: 100%;
+	}
+}
+.texto-parceiro{
+	.container-parceiro{
+		@extend .container;
+		margin-top: 1%;
+		.texto-germano{
+			color: $lapa;
+			text-align: justify; 
+		}
+	}	
+}
+.valores{
+	@extend .container;
+	margin-top: 1%;
+	.container-valores{
+		color: $lapa;
+		margin-bottom: 2rem;
+		@extend .no-gutters;
+		@extend .row;
+		margin-right: 0;
+		margin-left: 0;		
+		.titulo-valores{
+			font-weight: bold;
+		}
+		.texto-valores{
+			text-align: justify;
+			@media(min-width: map-get($grid-breakpoints,lg)){
+				margin-bottom: 3%;
+			}
+		}
+		.container-valores-2{
+			@extend .col-md-8;
+			padding: 0;
+			.lista-valores{
+			padding-left: 7%;
+			text-indent: 0;
+			@media(min-width: map-get($grid-breakpoints,lg)){
+				padding-left: 3%;
+				}
+			}
+		}	
+		.img-2{
+			@extend .col-md-4;
+			@extend .col-lg-3;
+			max-width: 100%;
+			@media(min-width: map-get($grid-breakpoints,md)){
+				margin-bottom: 3%;
+			}
+
+		}
+	}		
+}

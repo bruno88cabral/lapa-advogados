@@ -1,0 +1,62 @@
+.container-mea{
+	@extend .container;
+	.list-mea,
+	.texto-mea{
+		text-align: justify;
+		padding: 2% 0;
+		color: $lapa;
+	}
+	.texto-mea{
+		padding: 0;
+		@media(min-width: map-get($grid-breakpoints,lg)){
+			padding-left: 2%;
+		}
+		@media(min-width: map-get($grid-breakpoints,xl)){
+			padding-left: 1%;
+		}	
+	}
+	.list-mea{
+		line-height: 1.7rem;
+		padding-left: 5%;
+		@media(min-width: map-get($grid-breakpoints,md)){
+			padding-left: 3%;
+		}
+		@media(min-width: map-get($grid-breakpoints,lg)){
+			padding-left: 2%;
+		}
+		@media(min-width: map-get($grid-breakpoints,xl)){
+			padding-left: 1%;
+		}		
+	}
+}
+
+.container-adv{
+	@extend .container;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	.titulo-adv{
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 2rem;
+		font-weight: bolder;
+		margin-bottom: 3rem;
+	}
+	.nome-adv{
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.5rem;
+		margin-bottom: 2%;
+	}
+	.texto-adv{
+		text-align: justify;
+		margin-bottom: 5%;
+	}
+	.nome-adv,
+	.texto-adv,
+	.titulo-adv{
+		color: $lapa;
+
+	}
+}	
+	

@@ -1,0 +1,130 @@
+.fale-conosco{
+	@extend .container;
+	color: $lapa;
+	.container-fale-conosco{
+		@extend .row;
+		@extend .no-gutters;		
+		margin-top: 1.5rem;
+		.container-fale-conosco-1{
+			@extend .col-sm-12;
+			@extend .col-md-6;
+			margin-top: 3%;
+			margin-bottom: 3%;
+			.titulo-fale-conosco{
+				font-size: 1.8rem;
+				font-weight: bolder;
+				margin-bottom: .2rem
+			}
+			.sub-titulo-fale-conosco{
+				font-size: 1.2rem;
+				font-weight: 400;
+			}
+			form{
+				margin-top: 1.5rem;
+				width: 100%;
+			}
+			.endereco-fale-conosco{
+				margin-top: .8rem;
+				margin-bottom: 1.5rem;
+				.texto-endereco{
+					margin: 0;
+					font-size: .9rem;
+					text-align: right;
+
+				}
+			}
+			.maps-fale-conosco{
+				height: 300px;
+				width: 100%;
+				@media(min-width: map-get($grid-breakpoints,md)){
+					height: 250px;
+				}
+			}
+		}			
+	}
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+    color: $lapa;
+    font-size: .8rem;
+    opacity: 0.6;
+    text-indent: .5rem;
+}
+input::-moz-input-placeholder,
+textarea::-moz-input-placeholder{
+	color: $lapa;
+    font-size: .8rem;
+    opacity: 0.7;
+    text-indent: .5rem;
+}
+input:focus,
+textarea:focus
+{
+	outline:0;
+}
+input,
+textarea
+{
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+input,
+textarea{
+	margin:0;
+	width: 98%;
+	margin-bottom: .5rem;
+	border: 2px solid;
+	border-radius: 5px;
+	border-color: lighten($lapa,15%);
+	padding: .2rem 0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height: 1.5;
+	text-indent: .5rem;
+	font-weight: 600;
+	
+	/* Browsers have different default form fonts */
+	font-size: .8rem;
+	font-family:Arial;
+	&:nth-child(1){
+		@media(min-width: map-get($grid-breakpoints,md)){
+			width: 48%;
+		}
+		@media(min-width: map-get($grid-breakpoints,lg)){
+			width: 48%;
+		}
+	}
+	&:nth-child(2){
+		@media(min-width: map-get($grid-breakpoints,md)){
+			width: 48%;
+		}
+		@media(min-width: map-get($grid-breakpoints,lg)){
+			width: 48%;
+		}
+	}
+	&:nth-child(4){
+		height: 5rem;
+	}
+	
+}
+#enviar{
+		background-color: $lapa;
+		color: #fff;
+		border-color: 2px solid transparent;
+		text-transform: uppercase;
+		font-weight: 600;
+		transition: .3s;		
+		font-size: 1.2rem;
+		@media(min-width: map-get($grid-breakpoints,md)){
+			width: 25%;
+			padding: .2rem 1rem;
+		}
+		&:hover{
+			background-color: #fff;
+			color: $lapa;
+			border-color: $lapa;	
+		}
+	}

@@ -1,0 +1,28 @@
+.societario{	
+	@extend .container;
+	.container-societario{
+		@extend .row;
+		@extend .no-gutters;
+		.container-societario-1{
+			@extend .col-sm-12;
+			@extend .col-md-6;
+			padding-left: 3%;
+			margin-top: 3%;
+			margin-bottom: 3%;
+			color: $lapa;
+			.lista-societario{
+				padding-left: 5%;
+				@media(min-width: map-get($grid-breakpoints,md)){
+					padding-left: 3%;
+				}
+				@media(min-width: map-get($grid-breakpoints,lg)){
+					line-height: 2rem;
+					padding-left: 0;
+				}				
+			}
+			.img-societario{
+				width: 100%;
+			}
+		}
+	}		
+}

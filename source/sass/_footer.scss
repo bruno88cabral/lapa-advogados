@@ -1,0 +1,113 @@
+footer{
+	background-color: #f2f2f2;	
+	.container-footer{
+		@extend .container;
+
+		.container-footer-1{
+			@extend .row;
+			@extend .no-gutters;			
+			padding: 1.5rem 0;
+			.missao{
+				@extend .col-sm-12;
+				@extend .col-md-3;				
+				color: $lapa;
+				font-weight: bold;
+				@media(min-width: map-get($grid-breakpoints,lg)){
+					padding-left: 0;
+					padding-right: 0;
+				}
+
+				.titulo-missao{
+					text-transform: uppercase;
+					font-weight: bold;
+					font-style: 1rem;
+					font-size: 1rem;
+				}				
+				.texto-missao{
+					font-weight: 500;
+					font-size: .8rem;
+					
+				}
+			}
+			.endereco{
+				@extend .col-sm-12;
+				@extend .col-md-3;				
+				font-size: .5rem;
+				margin-bottom: 1rem;
+				color: $lapa;
+				.titulo-endereco{
+					text-transform: uppercase;
+					font-size: 1rem;
+					font-weight: bolder;
+
+				}
+				.texto-endereco{
+					margin-bottom: 0;
+					line-height: 1rem;
+					font-size: .8rem;
+					font-weight: 500;					
+				}
+
+			}
+			.maps{
+				@extend .col-sm-12;
+				@extend .col-md-6;	
+				height:400px;
+				@media(min-width: map-get($grid-breakpoints,md)){
+					height: 200px;
+				}
+			}
+		}
+		&:last-child{
+			margin: 0;
+   			padding: 0;
+    		width: 100%;
+		}
+	}	
+	.container-footer-3{
+		width: 100%;
+		.container-footer-2{
+			background-color: $lapa;
+			padding: 8% 0;
+    		text-align: center;
+
+    		@media(min-width: map-get($grid-breakpoints,lg)){
+				padding: 2% 0;
+			}
+    		.link-footer{
+    			&:first-child{
+    				.fa{
+    					padding: 10px 15.5px;
+    				}					
+				}
+				&:nth-child(2){
+					.fa{
+						padding: 10px 11px;
+					}					
+				}
+				&:nth-child(3){
+					.fa{
+						padding: 10px 13.5px;
+					}					
+				}
+				&:last-child{
+					.fa{
+						padding: 10px 6px 10px 8px;
+					}					
+				}
+    			.fa{
+					color: #fff;
+					border: 2px solid #fff;
+					border-radius: 50%;
+					font-size: 1.5rem;
+					margin: 0 3%;
+					transition: .5s;
+					&:hover{
+						background-color: #fff;
+						color: $lapa;
+					}					
+				}
+    		}
+		}
+	}	
+}

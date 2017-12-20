@@ -1,0 +1,20 @@
+@import "../components/bootstrap/scss/bootstrap.scss";
+@import "../components/components-font-awesome/scss/font-awesome.scss";
+
+@import "header";
+@import "home";
+@import "footer";
+@import "cabecalho";
+@import "parceiro";
+@import "socio";
+@import "entretenimento";
+@import "contratos";
+@import "societario";
+@import "fale-conosco.scss";
+
+.sucesso{
+	@extend .container;
+	margin: 12% auto;
+    text-align: center;
+    color: $lapa;
+}

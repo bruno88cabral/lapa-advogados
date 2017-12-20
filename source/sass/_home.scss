@@ -1,0 +1,81 @@
+.home{
+	@extend .container;
+	.container-home{		
+		@extend .row;
+		margin-right: 0;
+    	margin-left: 0;
+		padding-top: 5.5rem;
+	    padding-bottom: 2rem;
+		@media(min-width: map-get($grid-breakpoints,md)){
+			padding-top: 7rem;
+		}
+		.nav-aside{
+			@extend .col-sm-12;
+			@extend .col-md-3;
+			@extend .col-lg-3;
+			text-align: center;
+			background-color: $lapa;
+			color: $white;
+			padding: 1.2rem .2rem;
+			margin-right: 0;
+			.aside-list{
+					list-style-type: none;
+					padding-left: 0;
+					margin: 1rem;
+					border: 1px solid $grey;
+					.aside-item{
+						border: 1px solid $grey;
+						border-bottom: 0;
+						padding: .5rem 0;
+						&:nth-child(3){
+						    font-size: .7rem;
+						    padding: .75rem 0;
+						}
+						&:hover{
+							background-color: #a8a9ad;
+						}
+						.aside-link{
+							display: block;
+							color: $white;
+							text-transform: uppercase;
+							&:hover{
+								text-decoration: none;
+							}
+
+						}
+					}	
+				}
+			}
+			.container-img{
+				@extend .col-md-8;
+				@extend .col-lg-9;
+				.img-home{
+				width: 100%;
+				margin-top: 5%;
+				@media(min-width: map-get($grid-breakpoints,md)){
+					margin-top: 15%;
+				}
+				@media(min-width: map-get($grid-breakpoints,lg)){
+					margin-top: 0;
+
+				}
+			}
+		}	
+		.titulo-home{
+			text-align: left;
+			clear: both;
+			color: $lapa;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin: 1.5rem 0;
+			font-size: 1.5em;
+			@media(min-width: map-get($grid-breakpoints,md)){
+				padding-top: 1.5rem;
+			}
+		}
+		.texto-home{
+			text-align: justify;
+			color: $lapa;
+		}
+	}
+}

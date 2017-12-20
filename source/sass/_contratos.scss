@@ -1,0 +1,80 @@
+.img-absolute{
+	position: absolute;
+    top: 25%;
+    left: 0;
+    width: 42%;
+    height: 95%;
+    @media(min-width: map-get($grid-breakpoints,xs)){
+		display: none;
+	}
+	@media(min-width: map-get($grid-breakpoints,md)){
+		display: inline;
+		top: 2%;
+		left: 0;
+	}
+	@media(min-width: map-get($grid-breakpoints,lg)){
+		display: inline;
+		width: 20%;
+		height: 90%;
+		top: 5%;
+		left: 20%;
+	}
+	@media(min-width: map-get($grid-breakpoints,xl)){
+		width: 15%;
+		left: 25%;
+	}
+}
+.cabecalho-contrato{
+	
+	@media(min-width: map-get($grid-breakpoints,md)){
+		padding-left: 45% !important;
+	}
+	@media(min-width: map-get($grid-breakpoints,lg)){
+		padding-left: 33% !important;
+	}
+	@media(min-width: map-get($grid-breakpoints,xl)){
+		padding-left: 30% !important;
+	}
+}
+.contratos{
+	.container-contratos{
+		@extend .container;
+		position: relative;
+		.lista-contratos{
+			text-align: justify;
+			padding: 2% 5%;
+			color: $lapa;
+			padding-bottom: 2%;
+			margin-bottom: 0;
+			@media(min-width: map-get($grid-breakpoints,md)){
+				margin-left: 45%;
+				padding-left: 3%;
+				font-size: .9rem;
+			}
+			@media(min-width: map-get($grid-breakpoints,lg)){
+				padding-bottom: 2%;
+				padding-left: 3%;
+			}
+			@media(min-width: map-get($grid-breakpoints,xl)){
+				margin-left: 50%;
+			}
+		}
+		.texto-contratos{
+			text-align: justify;
+			padding: 0 5%;
+			color: $lapa;
+			margin-bottom: 0; 
+			@media(min-width: map-get($grid-breakpoints,md)){
+				margin-left: 45%;
+				padding-left: 3%;
+				font-size: .9rem;
+			}
+			@media(min-width: map-get($grid-breakpoints,lg)){
+				padding-left: 3%;
+			}
+			@media(min-width: map-get($grid-breakpoints,xl)){
+				margin-left: 50%;
+			}
+		}
+	}		
+}

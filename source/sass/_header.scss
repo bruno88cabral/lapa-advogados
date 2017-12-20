@@ -1,0 +1,80 @@
+.header-lapa{
+	box-shadow: 0px 1px 50px #a0a0a0; 
+	padding: .8rem 1.5rem;
+	position: fixed;
+	z-index: 999;
+	background-color: #fff;
+	width: 100%;
+	@media(min-width: map-get($grid-breakpoints,lg)){
+		padding:0;
+		height: 86px;
+	}
+	.container-header{
+		@extend .container;
+		.lapa-logo{
+			width: 40%;
+			@media(min-width: map-get($grid-breakpoints,md)){
+				width: 20%;
+			}
+			@media(min-width: map-get($grid-breakpoints,lg)){
+				width: 12%;
+				padding: 16px 0;
+			}
+		}
+		.fa{
+			float: right;
+			line-height: 54px;
+			font-size: 2.2rem;
+			color: $lapa;
+			@media(min-width: map-get($grid-breakpoints,md)){
+				font-size: 4rem;
+				line-height: 70px;
+				margin-right: 5%;
+			}
+			@media(min-width: map-get($grid-breakpoints,lg)){
+				display: none;
+			}
+		}
+		.navbar-lapa{
+			display: none;
+			@media(min-width: map-get($grid-breakpoints,lg)){
+				display: inline;
+				float: right;
+			}
+			.nav-list{
+				list-style-type: none;
+				margin-top: 1rem;
+				padding-left: 0; 
+				margin-bottom: 0;
+				@media(min-width: map-get($grid-breakpoints,lg)){
+					margin-top: 0;
+				}								
+				.nav-item{
+					margin-bottom: 1rem;
+					@media(min-width: map-get($grid-breakpoints,lg)){
+						float: left;						
+						line-height: 0;
+						margin-bottom: 0;
+						&:hover{
+							background-color: $lapa;
+							.nav-link{
+								color: #fff !important;
+							}						
+						}
+					}
+					.nav-link{
+						color: $lapa;					
+						text-transform: uppercase;
+						font-style: italic;
+						font-weight: 500;
+						@media(min-width: map-get($grid-breakpoints,lg)){
+							padding: 0px 1.5rem;
+							font-size: 1.2rem;
+							line-height: 86px;			
+						}
+					}
+				}
+			}
+		}
+	}		
+}
